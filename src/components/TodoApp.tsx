@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import type { Todo } from '../models/Todo';
+import  {type Todo } from '../models/Todo';
 import TodoList from './TodoList';
 import TodoForm from './TodoForm';
 
@@ -42,3 +42,5 @@ const TodoApp = () => {
   );
 
 };
+
+export default TodoApp;
