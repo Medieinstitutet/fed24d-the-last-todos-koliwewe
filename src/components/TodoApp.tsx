@@ -25,6 +25,10 @@ const TodoApp = () => {
         ));
     };
 
+    const deleteTodo = (id: number) => {
+        setTodos(prev => prev.filter(todo => todo.id !== id));
+    };
+
     const sortTodos = () => {
         setTodos(prev => 
             [...prev].sort((a, b) => Number(a.done)- Number(b.done))
@@ -37,7 +41,7 @@ const TodoApp = () => {
       <h1>Min Todo-Lista</h1>
       <TodoForm addTodo={addTodo} />
       <button onClick={sortTodos}>Sortera</button>
-      <TodoList todos={todos} toggleTodo={toggleTodo} />
+      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
     </div>
   );
 

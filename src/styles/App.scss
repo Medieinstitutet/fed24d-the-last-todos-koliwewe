@@ -14,29 +14,55 @@
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+  input {
+    padding: 0.5rem;
+    font-size: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background: #005fa3;
+    }
+  }
+}
+.todo-list {
+  margin-top: 2rem;
+  list-style: none;
+  padding: 0;
+
+  li {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+
+    &.done {
+      text-decoration: line-through;
+      color: gray;
+    }
+
+    h3 {
+      margin: 0;
+    }
+
+    p {
+      margin: 0.2rem 0 0;
+    }
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+button {
+  margin-top: 1rem;
 }

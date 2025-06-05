@@ -1,7 +1,9 @@
 import "./styles/App.scss";
+import TodoApp from "./components/TodoApp";
 
-function App() {
-  return <></>;
+
+const App = () =>{
+  return <TodoApp />;
 }
 
 export default App;
