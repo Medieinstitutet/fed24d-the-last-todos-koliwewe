@@ -15,7 +15,7 @@ const TodoList = ({ todos, toggleTodo, deleteTodo }: Props) => {
             <h3>{todo.title}</h3>
             <p>{todo.description}</p>
           </div>
-          <button onClick={() => deleteTodo(todo.id)}>🗑 Ta bort</button>
+          <button className="delete-button" onClick={() => deleteTodo(todo.id)}>🗑 Ta bort</button>
         </li>
       ))}
     </ul>

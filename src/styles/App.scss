@@ -50,7 +50,7 @@
 
     &.done {
       text-decoration: line-through;
-      color: gray;
+      color: rgb(9, 73, 20);
     }
 
     h3 {
@@ -65,4 +65,7 @@
 
 button {
   margin-top: 1rem;
+}
+.delete-button {
+  background-color: rgb(119, 29, 29);
 }
