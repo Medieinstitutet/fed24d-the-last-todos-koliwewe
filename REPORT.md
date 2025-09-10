@@ -1,9 +1,10 @@
 # 📌 Rättningsrapport – fed24d-the-last-todos-koliwewe
 
 ## 🎯 Uppgiftens Krav:
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Tfc19Mhg)
 # Inlämningsuppgift Todo
 
-I denna inlämningsuppgift kommer ni att skapa er egen todo-lista i en react-applikation.
+I denna inlämningsuppgift kommer ni att skapa er egen todo-lista.
 Sidan skall visa ett antal punkter som skall göras. Dessa skall då komma upp på skärmen i form av en lista. När uppgiften är slutförd skall användaren kunna markera uppgiften som slutförd och uppgiften skall då tas bort från listan.
 
 ## Betyg G
@@ -11,17 +12,20 @@ Sidan skall visa ett antal punkter som skall göras. Dessa skall då komma upp p
 - Skapa en hårdkodad lista med punkter att göra (hitta på egna punkter, dessa skall inte bara vara en text)
 - Presentera listan på skärmen, helst med lite kontroll. Detta betyder i en html-struktur t.ex. i en ul/li-lista
 - Implementera klickhändelse för att hantera borttagandet av en todo.
-- Todo markeras som klar/tas bort från skärmen och markeras som klar i javascript-listan.
+- Todo markeras som klar på skärmen och markeras som klar i javascript-listan.
+- Ni behöver använda localStorage så att listan inte börjar om från början varje gång sidan används.
+- Ni behöver använda er av en komponent.
+- Ni behöver använda er av state med en lista med objekt.
 
 ## Betyg VG
 
 - Alla punkter under G
 - Kunna visa även klara händelser och klicka tillbaka den så att de blir oklara igen.
 - Skapa ett formulär som tillåter att en användare skapar nya todos efterhand.
-- Använda lifting state up för att dela upp dina komponenter bättre.
 - Kunna sortera ordningen på dina todos.
-- Implementera ett valfritt grafiskt ramverk till din todolista, t.ex. material ui eller tailwind.
-- Egen css får gärna skrivas och då skall ni ha en bra struktur och använda flex eller grid på ett bra sätt.
+- Implementera ett valfritt grafiskt ramverk, t.ex. tailwind eller material ui.
+- Ni behöver ha minst tre komponenter.
+- Ni måste använda Lifting State Up.
 
 ## Allmänt
 
@@ -50,7 +54,7 @@ för att köra projektet.
 
 
 ## 🏆 **Betyg: VG**
-📌 **Motivering:** Koden uppfyller samtliga krav för betyg VG, inklusive de under betyg G. Applikationen hanterar todolistan på ett interaktivt sätt där användaren kan markera uppgifter som klara, sortera dem, och lägga till nya. Det finns användning av lifting state up för att dela upp komponenter och själva funktionaliteten är korrekt implementerad både för grundläggande och avancerade funktioner.
+📌 **Motivering:** Koden uppfyller alla krav för både G och VG. Den presenterar en todo-lista med funktionalitet för att markera som klar, lägga till och ta bort uppgifter. Koden är välstrukturerad och använder flera komponenter för att hantera olika delar av applikationen. Den inkluderar även användning av localStorage för att spara uppgifter, sorteringsfunktionalitet, samt ett avancerat användargränssnitt med välformaterad CSS.
 
 💡 **Förbättringsförslag:**  
-Även om koden är välstrukturerad finns det några mindre förbättringsmöjligheter: 1. Implementera bättre validering eller feedback när användaren försöker lägga till en tom todo-titel. 2. Använda en grafisk ramverk som t.ex. Material UI eller Tailwind för att förbättra den visuella upplevelsen ytterligare och för att demonstrera förmågan att integrera tredjepartsbibliotek med React. 3. Även om localStorage är ett bra alternativ för att spara data lokalt kan det vara bra att introducera ett annat lager av abstraction eller state management om projektet växer i komplexitet. 4. Kommentera koden för att underlätta för nya utvecklare att förstå projektspecifika logiker och beslut.
+Kodstilen är bra, men vissa förbättringar kan övervägas: 1) Det skulle vara bra att separera hårdkodade data från komponentlogik genom att lägga dem i en separat fil eller en konstant. 2) Specifika felmeddelanden kan implementeras för att förbättra användarupplevelsen vid felhanteringssituationer. 3) Refaktorisering av vanliga mönster som visuell och logisk kod kan ytterligare förbättra läsbarheten och underhållbarheten.
